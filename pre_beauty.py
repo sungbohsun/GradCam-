@@ -68,7 +68,7 @@ if __name__ == '__main__':
         result = pool.starmap(f,zip(n,file))
         
     if not os.path.isdir('beauty_re'):
-        os.mkdir('beauty_seg')        
+        os.mkdir('beauty_re')        
     files = glob('beauty_seg/*')
     for file in tqdm(files):
         re = padding(file)
